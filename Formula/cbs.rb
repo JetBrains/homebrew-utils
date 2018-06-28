@@ -2,8 +2,8 @@ class Cbs < Formula
   desc "Circlet Build System"
   homepage "https://jetbrains.team"
 
-  url "https://github.com/JetBrains/rd/files/2146826/cbs-1.0.zip"
-  sha256 "e89ebc8edcc78686e429eebd7727e98b5d318280b1a2b66460942f68a9984c6e"
+  url "https://github.com/JetBrains/rd/files/2146916/cbs-1.0.1.zip"
+  sha256 "97bdec1842abd1904867c0656fb23b2d4632298147b3f2ecf769619d9e75f98f"
 
   # depends_on "cmake" => :build
 
