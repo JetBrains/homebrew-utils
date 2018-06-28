@@ -7,10 +7,10 @@ class Cbs < Formula
 
  def install
     prefix.install "lib"
-    bin.install "bin/bunch"
+    bin.install "bin/cbs"
  end
 
  test do
-     system "#{bin}/bunch"
+     system "#{bin}/cbs"
  end
 end
