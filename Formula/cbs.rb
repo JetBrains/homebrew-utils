@@ -2,9 +2,9 @@ class Cbs < Formula
   desc "Circlet Build System"
   homepage "https://jetbrains.team"
 
-  url "https://dl.bintray.com/serjic/cbs/cbs-1.0.3.zip"
-  sha256 "8c3fc963dced92ed4983df523b10aba7188e43115765839a86d46ec1f2d8ded9"
-
+  url "https://dl.bintray.com/serjic/cbs/cbs-1.0.4.zip"
+  sha256 "66b90c5618f8321f63368ed8fc538285be8bdb84157465ea07df89d79998db2d"
+  
   def install
     prefix.install "lib"
     bin.install "bin/cbs"
