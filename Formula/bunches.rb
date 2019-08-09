@@ -1,8 +1,8 @@
 class Bunches < Formula
   desc "Set of utils for supporting patchsets branches"
   homepage "https://github.com/JetBrains/bunches"
-  url "https://github.com/JetBrains/bunches/releases/download/v0.9.1/bunch-cli-0.9.1.zip"
-  sha256 "204c03179eff071e3eadcfa681868f3303026f301427ffcdd9d75956650c663a"
+  url "https://github.com/JetBrains/bunches/releases/download/v1.0.73/bunch-cli-1.0.73.zip"
+  sha256 "43ba811a016441734753ec4dde7cb57bc0933d28b2f2d8f8f78cf61daa5d8f77"
 
   def install
     prefix.install "lib"
