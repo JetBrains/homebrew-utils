@@ -5,21 +5,21 @@
 class Qodana < Formula
   desc "🔧 Command-line interface to Qodana – the code quality platform"
   homepage "https://github.com/JetBrains/qodana-cli"
-  version "0.6.2"
+  version "0.6.3"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.2/qodana_0.6.2_Darwin_x86_64.tar.gz"
-      sha256 "3d880661af60e64ced91af6cadf8faef446c6d31e684d485f2f4e4aa9ce82d73"
+    if Hardware::CPU.arm?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.3/qodana_0.6.3_Darwin_arm64.tar.gz"
+      sha256 "edb885dc1f54acc1b62e32e9697a735ee459710d52a6a4e7af8099ac1bd139b8"
 
       def install
         bin.install "qodana"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.2/qodana_0.6.2_Darwin_arm64.tar.gz"
-      sha256 "90530f04ce958c90b3b7b9656567cad601cf2e169ffadfb914c309b6ba16317e"
+    if Hardware::CPU.intel?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.3/qodana_0.6.3_Darwin_x86_64.tar.gz"
+      sha256 "80e347dc6a70886c9bc445772ab9886d651ca30d43103950689f6fd3d876048c"
 
       def install
         bin.install "qodana"
@@ -29,16 +29,16 @@ class Qodana < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.2/qodana_0.6.2_Linux_arm64.tar.gz"
-      sha256 "d724c115f848e439adc37730b5492dc2cb3114afa854fad4e8638b04c64375c1"
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.3/qodana_0.6.3_Linux_arm64.tar.gz"
+      sha256 "eed3c0578956cd72b52c243102969a32317f2f6c6b17f4874f0f3aee9a8130f0"
 
       def install
         bin.install "qodana"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.2/qodana_0.6.2_Linux_x86_64.tar.gz"
-      sha256 "81dc26577ed814a69b1fcedc793cd0042bfd46210a0784f7e161045b1e6c3f1e"
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v0.6.3/qodana_0.6.3_Linux_x86_64.tar.gz"
+      sha256 "420d2dfcb469ddc640914631bad09e2006f5650657b992afc4e2119a376aee4e"
 
       def install
         bin.install "qodana"
