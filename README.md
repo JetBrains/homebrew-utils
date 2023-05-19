@@ -14,6 +14,12 @@ For example, to install https://github.com/JetBrains/bunches
 brew install bunches
 ```
 
+Or just in one command (that would add the tap and install an app), an example to install https://github.com/JetBrains/qodana-cli
+
+```
+brew install jetbrains/utils/qodana
+```
+
 ## Writing Formulas
 
 https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
