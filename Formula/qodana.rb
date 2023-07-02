@@ -5,21 +5,21 @@
 class Qodana < Formula
   desc "🔧 Run Qodana as fast as possible, with minimum effort required"
   homepage "https://github.com/JetBrains/qodana-cli"
-  version "2023.1.5"
+  version "2023.1.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.5/qodana_darwin_x86_64.tar.gz"
-      sha256 "aef78bba6caa0c720253503cdd405ad70c1f811787cf2aef280df27e0c31a679"
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.6/qodana_darwin_x86_64.tar.gz"
+      sha256 "cc7bf6af28bc26cbe7f4ff76906a1a87e19321082003edf4c014f6bdd4874c95"
 
       def install
         bin.install "qodana"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.5/qodana_darwin_arm64.tar.gz"
-      sha256 "35a23dfa647000eca8bd927305c7e134851112d05e0aaa5b6a27e792e60dc40e"
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.6/qodana_darwin_arm64.tar.gz"
+      sha256 "722ffb66a23fa0d6d8aef4dabf8b1e520bab04c7c1232b5d0d1859e7113dc6a8"
 
       def install
         bin.install "qodana"
@@ -28,17 +28,17 @@ class Qodana < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.5/qodana_linux_arm64.tar.gz"
-      sha256 "f5407a622b86ab63a69d043dcd9ff3f008d80b14a56743e4119a98409dad8cb9"
+    if Hardware::CPU.intel?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.6/qodana_linux_x86_64.tar.gz"
+      sha256 "de0e745b917cefb943bf1943deaa019e3a5e8a990597cbee8931cb8442cf5f7e"
 
       def install
         bin.install "qodana"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.5/qodana_linux_x86_64.tar.gz"
-      sha256 "ee8a29d8cd25a0b5451d4e87e43d141bc1b4a54483a0024fd4746a1715f94b67"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.1.6/qodana_linux_arm64.tar.gz"
+      sha256 "aaef6501e27ba4685d04e683e51036621a1b33b358bb5358fcb4003a89af9d1c"
 
       def install
         bin.install "qodana"
