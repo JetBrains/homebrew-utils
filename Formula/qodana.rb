@@ -5,30 +5,40 @@
 class Qodana < Formula
   desc "🔧 Run Qodana as fast as possible, with minimum effort required"
   homepage "https://github.com/JetBrains/qodana-cli"
-  version "2023.3.0"
+  version "2023.3.1"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.0/qodana_darwin_all.tar.gz"
-    sha256 "698751833e9ed3203264e8078e109f89a2a393b8dd4c16526c18b59a639b745c"
-
-    def install
-      bin.install "qodana"
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.0/qodana_linux_arm64.tar.gz"
-      sha256 "1233b8479b57445d84d111907bb69ffbedb444827aff4324872e0b14644f9b57"
+    if Hardware::CPU.arm?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.1/qodana_darwin_arm64.tar.gz"
+      sha256 "6d88d0e9ccf5fa40bab6722f447713f3801dbd0db51630d2b53e518fcb6c1e40"
 
       def install
         bin.install "qodana"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.0/qodana_linux_x86_64.tar.gz"
-      sha256 "bf94fc6b466db16a5c72bd5af9d70a8ad29b9a6f381c085682ef3d7bb7e00725"
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.1/qodana_darwin_x86_64.tar.gz"
+      sha256 "433f222e01a321f16f4009eecc19b077b20f646232a80a2d9ef46a62c01d42e2"
+
+      def install
+        bin.install "qodana"
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.1/qodana_linux_arm64.tar.gz"
+      sha256 "054f0c2a241c4d2bbe23f68cb25202baffaad1a99d93bf293b06a3f30597d5cb"
+
+      def install
+        bin.install "qodana"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/JetBrains/qodana-cli/releases/download/v2023.3.1/qodana_linux_x86_64.tar.gz"
+      sha256 "f24f92988ced0991c11fe59395c9f58d50125440bb5cf1c2b29da2955ca0d6bb"
 
       def install
         bin.install "qodana"
