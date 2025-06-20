@@ -16,6 +16,10 @@ class KotlinLsp < Formula
   def install
     chmod "+x", "kotlin-lsp.sh"
     libexec.install Dir["*"]
+
+    # write_env_script is private API https://rubydoc.brew.sh/Pathname#write_env_script-instance_method
+    # Alternative:
+    #   bin.install_symlink "#{libexec}/kotlin-lsp.sh" => "kotlin-lsp"
     (bin/"kotlin-lsp").write_env_script "#{libexec}/kotlin-lsp.sh", Language::Java.overridable_java_home_env
   end
 
