@@ -1,9 +1,9 @@
 class KotlinLsp < Formula
   desc "Official Language Server Protocol for the Kotlin language"
   homepage "https://github.com/Kotlin/kotlin-lsp"
-  version "0.252.17811"
+  version "0.253.10629"
   url "https://download-cdn.jetbrains.com/kotlin-lsp/#{version}/kotlin-#{version}.zip"
-  sha256 "0f38b00afb6d81f63d252dc729a0bc33a009befd11adea99001a52797d67318c"
+  sha256 "afa071874081f644ea6a85b4a864576effb6afa8ee30ee7511199cdccdac379c"
   license "Apache-2.0"
 
   livecheck do
