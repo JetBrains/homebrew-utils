@@ -9,6 +9,9 @@ class KotlinLsp < Formula
     regex(/^(?:#)+\s*v(.*)$/i)
   end
 
+  # We don't want to support brew packages on Linux (On Linux, people should be using their native package managers)
+  depends_on :macos
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://download-cdn.jetbrains.com/kotlin-lsp/#{version}/kotlin-lsp-#{version}-mac-x64.zip"
