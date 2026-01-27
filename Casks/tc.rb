@@ -3,7 +3,7 @@ cask "tc" do
   name "tc"
   desc "A command-line interface for TeamCity CI/CD server"
   homepage "https://github.com/JetBrains/teamcity-cli"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "tc" do
   on_macos do
     on_intel do
       url "https://github.com/JetBrains/teamcity-cli/releases/download/v#{version}/tc_#{version}_darwin_x86_64.tar.gz"
-      sha256 "0a0c25c5850f6d8e6cf31bb58f8ade689fc0f9c827328aa64342dac4e3989af9"
+      sha256 "e1cea4478c3542a0771a80fd046062e07312c4865d6bf2d1419eefce5bfdbc02"
     end
     on_arm do
       url "https://github.com/JetBrains/teamcity-cli/releases/download/v#{version}/tc_#{version}_darwin_arm64.tar.gz"
-      sha256 "e3215c429ca1413e2668f620331adbb78db520ed3ce0d5e576663b5681ce4e76"
+      sha256 "08511c63d3d72fdbcacb810bc6721afe929c03ae9fa1103414e5aa97a522dafb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/JetBrains/teamcity-cli/releases/download/v#{version}/tc_#{version}_linux_x86_64.tar.gz"
-      sha256 "57d4990eb77a466145578462309dc67a7e8c1debe9f8fa2adc0bd0f2f05def11"
+      sha256 "c915b0a3d43836b68218fe06355c8dd224c1b6c8a4ad44a260cad3a5a92e1fd1"
     end
     on_arm do
       url "https://github.com/JetBrains/teamcity-cli/releases/download/v#{version}/tc_#{version}_linux_arm64.tar.gz"
-      sha256 "b5dbf7d11beb8b9bdaaf3232c482618082d73f39b8341ee6c8b01217414022b7"
+      sha256 "6c79b6b6c88b89cb0ee095ffd2a810414c9a79d17aa9dc9c31860d81337ee8c8"
     end
   end
 
