@@ -5,21 +5,21 @@
 class Tc < Formula
   desc "A command-line interface for TeamCity CI/CD server"
   homepage "https://github.com/JetBrains/teamcity-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.2.0/tc_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "e1cea4478c3542a0771a80fd046062e07312c4865d6bf2d1419eefce5bfdbc02"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.3.0/tc_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "56e5afa575be0ed4fb22a3ea8180824f65af06280008ec88509c9bf148e1f19f"
 
       def install
         bin.install "tc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.2.0/tc_0.2.0_darwin_arm64.tar.gz"
-      sha256 "08511c63d3d72fdbcacb810bc6721afe929c03ae9fa1103414e5aa97a522dafb"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.3.0/tc_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4af3d436cae3954af36a356c7554a58ad88a2d0e762276724a8c2592ee515743"
 
       def install
         bin.install "tc"
@@ -29,17 +29,15 @@ class Tc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.2.0/tc_0.2.0_linux_x86_64.tar.gz"
-      sha256 "c915b0a3d43836b68218fe06355c8dd224c1b6c8a4ad44a260cad3a5a92e1fd1"
-
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.3.0/tc_0.3.0_linux_x86_64.tar.gz"
+      sha256 "bc991bdc8872dc831bdef7926c07383bcda5abd0dd40284a48fd4db67479deaa"
       def install
         bin.install "tc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.2.0/tc_0.2.0_linux_arm64.tar.gz"
-      sha256 "6c79b6b6c88b89cb0ee095ffd2a810414c9a79d17aa9dc9c31860d81337ee8c8"
-
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.3.0/tc_0.3.0_linux_arm64.tar.gz"
+      sha256 "319eaaf536b8c97a6dc60bfed3997027fdf23aebebd148c7543bdb617a43e018"
       def install
         bin.install "tc"
       end
