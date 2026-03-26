@@ -5,21 +5,21 @@
 class Teamcity < Formula
   desc "A command-line interface for TeamCity CI/CD server"
   homepage "https://github.com/JetBrains/teamcity-cli"
-  version "0.7.2"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.7.2/teamcity_0.7.2_darwin_x86_64.tar.gz"
-      sha256 "0dbd1149c0bf468f1329d5b15a6498fcfe7b8436573c4e361151afe8d10cd396"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.8.0/teamcity_0.8.0_darwin_x86_64.tar.gz"
+      sha256 "6613ea02a26820dc1b89ec4a3344e2b67d5c5b7566f9ff356b487569c90f943c"
 
       define_method(:install) do
         bin.install "teamcity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.7.2/teamcity_0.7.2_darwin_arm64.tar.gz"
-      sha256 "f2b9d89a24c57e92dfebbc0ba9404e273d44a4a0ea09b8a6265fff1ab821ccc2"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.8.0/teamcity_0.8.0_darwin_arm64.tar.gz"
+      sha256 "64a69990e804869b5f3a9ed02e3e7b880174600aae7bd0eaf43c7d714b5e18e8"
 
       define_method(:install) do
         bin.install "teamcity"
@@ -29,15 +29,15 @@ class Teamcity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.7.2/teamcity_0.7.2_linux_x86_64.tar.gz"
-      sha256 "a9470aee1f35b835535eacd35850146dd0c2a5a1bb56d38ca0634f4159c12e0e"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.8.0/teamcity_0.8.0_linux_x86_64.tar.gz"
+      sha256 "689e328c5e1caf646fb8cd55fb6495bce86ee5f594d11d4dafd87e9f0bc2f0df"
       define_method(:install) do
         bin.install "teamcity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.7.2/teamcity_0.7.2_linux_arm64.tar.gz"
-      sha256 "09c92fe44432afa33864befb58f1c804ed8915a2fee29ee917087d6ae23835e0"
+      url "https://github.com/JetBrains/teamcity-cli/releases/download/v0.8.0/teamcity_0.8.0_linux_arm64.tar.gz"
+      sha256 "a3beb4d59a01d386426f1a02d4046538ae5f7f1ce7ad995b441c45c570dd1e5d"
       define_method(:install) do
         bin.install "teamcity"
       end
