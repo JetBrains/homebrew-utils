@@ -1,25 +1,25 @@
 class Jcp < Formula
   desc "JetBrains Cloud Platform CLI"
   homepage "https://github.com/bazhenov/jcp-cli"
-  version "0.6.0"
+  version "0.6.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.0/jcp-aarch64-apple-darwin.tar.xz"
-      sha256 "93ba870b1cfdf76016d4109b3d5479aaac45785953596e5dea3c141df05a2d31"
+      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.1/jcp-aarch64-apple-darwin.tar.xz"
+      sha256 "b16a8c79e9856573d5e6ebcd2b728523b76a389c7cc8edba431d4a597a4a8826"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.0/jcp-x86_64-apple-darwin.tar.xz"
-      sha256 "e38eb05cf55ee4657c6cd0d3211acedd5abf308d76325eb2e4a3c81b6bc13a51"
+      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.1/jcp-x86_64-apple-darwin.tar.xz"
+      sha256 "452d7420ebf87f01b309dcc0145d22c540a88e533f2d6c418a84f7403ade7bcd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.0/jcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e4d6f9ad3866170c8ec138320d471abbbebf477698b5099c321c032197da07f9"
+      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.1/jcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "39557d1b47166464850b48cc3dc8bda2896e50d2661a52ec919b2e50ff945fe1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.0/jcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "be2921dcebac7fb5c2e3aea8b6b44e504aab3336e42b86766fca71528e21f3fb"
+      url "https://github.com/bazhenov/jcp-cli/releases/download/v0.6.1/jcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f07e05b08fa89ae78baec36724a20be9bd3102e11cc8336b15694c54708fa46a"
     end
   end
 
