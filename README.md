@@ -1,6 +1,6 @@
 [![JetBrains team project](https://jb.gg/badges/team-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-Reposistory for Homebrew Formulas (https://brew.sh/)
+Repository for Homebrew Formulas (https://brew.sh/)
 
 ## Usage
 
