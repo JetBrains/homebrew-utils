@@ -1,7 +1,7 @@
 class KotlinLsp < Formula
   desc "Official Language Server Protocol for the Kotlin language"
   homepage "https://github.com/Kotlin/kotlin-lsp"
-  version "262.8190.0"
+  version "262.9593.0"
   license "Apache-2.0"
 
   livecheck do
@@ -16,12 +16,12 @@ class KotlinLsp < Formula
     if Hardware::CPU.intel?
       url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}.sit",
           using: :nounzip
-      sha256 "f3845ae9ee38c22ef5e436390d86a3d908f77073e9667fa643a5ae0957c19728"
+      sha256 "17369fda97c85418ac24ab38a9df56b21522a3468dfe193832fe455c13920745"
     end
     if Hardware::CPU.arm?
       url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}-aarch64.sit",
           using: :nounzip
-      sha256 "e20183262784bb7e665ce1aea4855872a8b16f211ebb478d452773553732d9fb"
+      sha256 "6ba6021a706b21e64cef33f7e2b79f187c0910320722bb2d3ed05ad1115ec43f"
     end
   end
 
