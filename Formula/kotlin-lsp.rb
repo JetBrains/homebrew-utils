@@ -12,17 +12,15 @@ class KotlinLsp < Formula
   # We don't want to support brew packages on Linux (On Linux, people should be using their native package managers)
   depends_on :macos
 
-  on_macos do
-    if Hardware::CPU.intel?
-      url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}.sit",
-          using: :nounzip
-      sha256 "17369fda97c85418ac24ab38a9df56b21522a3468dfe193832fe455c13920745"
-    end
-    if Hardware::CPU.arm?
-      url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}-aarch64.sit",
-          using: :nounzip
-      sha256 "6ba6021a706b21e64cef33f7e2b79f187c0910320722bb2d3ed05ad1115ec43f"
-    end
+  if Hardware::CPU.intel?
+    url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}.sit",
+        using: :nounzip
+    sha256 "17369fda97c85418ac24ab38a9df56b21522a3468dfe193832fe455c13920745"
+  end
+  if Hardware::CPU.arm?
+    url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}-aarch64.sit",
+        using: :nounzip
+    sha256 "6ba6021a706b21e64cef33f7e2b79f187c0910320722bb2d3ed05ad1115ec43f"
   end
 
   def install
