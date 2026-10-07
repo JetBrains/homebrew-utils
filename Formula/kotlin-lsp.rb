@@ -14,12 +14,12 @@ class KotlinLsp < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}.sit",
+      url "https://download.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}.sit",
           using: :nounzip
       sha256 "e69e0c9d27b915b2db9ee692ec08d097df1a394d9f21190457ef199f2905f77e"
     end
     if Hardware::CPU.arm?
-      url "https://download-cdn.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}-aarch64.sit",
+      url "https://download.jetbrains.com/language-server/kotlin-server/#{version}/kotlin-server-#{version}-aarch64.sit",
           using: :nounzip
       sha256 "ebef2e13cd4adc4ec9e04084b848000a3ec7a9d2917c64f269574ce2efe9ecad"
     end
