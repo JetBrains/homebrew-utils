@@ -5,21 +5,21 @@
 class Youtrack < Formula
   desc "A command-line interface for JetBrains YouTrack"
   homepage "https://github.com/JetBrains/youtrack-cli"
-  version "0.6.0"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.6.0/youtrack_0.6.0_darwin_x86_64.tar.gz"
-      sha256 "e150b82586288ff6a6b8b428f0b6507f5073f1e5b8e6d15d78c2877c951382c0"
+      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.7.0/youtrack_0.7.0_darwin_x86_64.tar.gz"
+      sha256 "e1fc018759505aff3b7071352e5ad47a9575ea0194965aaa2939a2a9cc0a9d17"
 
       define_method(:install) do
         bin.install "youtrack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.6.0/youtrack_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e1fe9ee8f07824c3a3d5df8c34ed42e8cbed9e9a2bdd8ed31d67be360e6fa9d4"
+      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.7.0/youtrack_0.7.0_darwin_arm64.tar.gz"
+      sha256 "f61b5545ed9dc1d7989ecccd56c4b7f1d09f3b6ce9d2abb2ca0b5f541b57a735"
 
       define_method(:install) do
         bin.install "youtrack"
@@ -29,15 +29,15 @@ class Youtrack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.6.0/youtrack_0.6.0_linux_x86_64.tar.gz"
-      sha256 "c843459511943a9e367d9deab21491d29462e5c31686fccf59bfea561b482ea1"
+      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.7.0/youtrack_0.7.0_linux_x86_64.tar.gz"
+      sha256 "f3cf2b84d832ae529b449c162f8da31ce5f0da3f1531b601455a204febf621f9"
       define_method(:install) do
         bin.install "youtrack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.6.0/youtrack_0.6.0_linux_arm64.tar.gz"
-      sha256 "d986c82bafd6f544e9ec65d0604ff5f03aa129857a2e90f519ac066515e64895"
+      url "https://github.com/JetBrains/youtrack-cli/releases/download/v0.7.0/youtrack_0.7.0_linux_arm64.tar.gz"
+      sha256 "00957616f663b2999598949fd74d0d6c0dc3aed4acddc66f112a17191420e743"
       define_method(:install) do
         bin.install "youtrack"
       end
